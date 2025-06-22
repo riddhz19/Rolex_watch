@@ -1,0 +1,50 @@
+<searchs>
+    <search>
+        <id>1</id>
+        <name>Datejust</name>
+        <price>$500.10</price>
+        <link>datejust.php?id=1</link>
+    </search>
+    <search>
+        <id>2</id>
+        <name>Submariner</name>
+        <price>$300.03</price>
+        <link>submarinar.php?id=2</link>
+    </search>
+    <search>
+        <id>3</id>
+        <name>GMT-Master II</name>
+        <price>$490.00</price>
+        <link>gmt.php?id=3</link>
+    </search>
+    <search>
+        <id>4</id>
+        <name>Day-Date</name>
+        <price>$190.89</price>
+        <link>daydate.php?id=4</link>
+    </search>
+    <search>
+        <id>5</id>
+        <name>Cosmograph Daytona</name>
+        <price>$504.90</price>
+        <link>cosmo.php?id=5</link>
+    </search>
+    <search>
+        <id>6</id>
+        <name>Oyster Prepetual</name>
+        <price>$391.83</price>
+        <link>oyster.php?id=6</link>
+    </search>
+    <search>
+        <id>7</id>
+        <name>Yatch-Master</name>
+        <price>$310.62</price>
+        <link>yatch.php?id=7</link>
+    </search>
+    <search>
+        <id>8</id>
+        <name>Sea-Dweller</name>
+        <price>$411.09</price>
+        <link>sea.php?id=8</link>
+    </search>
+</searchs>

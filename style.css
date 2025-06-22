@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+
+body {
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: height 0.3s ease; 
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70px;
+    transition: height 0.3s ease-in-out;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    color: white;
+}
+
+.logo img {
+    height: 45px;
+    width: 45px;
+    margin-left: 40pc;
+}
+
+.navbar .lg img {
+    width: 50px;
+}
+
+input {
+    display: none;
+}
+
+.toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    z-index: 1;
+    cursor: pointer;
+    top: 20px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggle .line {
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200pc;
+    height: 13pc;
+    padding: 50px 20px;
+    transition: left 0.3s ease;
+}
+
+input:checked~.slide {
+    left: 0;
+}
+
+.slide ul {
+    list-style: none;
+}
+
+.slide ul li {
+    margin: 20px 0;
+}
+
+.slide ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+}
+
+input:checked~.toggle .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+input:checked~.toggle .line:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked~.toggle .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 768px) {
+    .slide {
+        left: -100%;
+        width: 100%;
+        transition: left 0.3s ease;
+    }
+
+    input:checked~.slide {
+        left: 0;
+    }
+
+    .toggle {
+        left: 100px;
+    }
+}
